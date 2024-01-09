@@ -1,0 +1,16 @@
+slang_dict = {
+    "LOL" : "una risposta a qualcosa di divertente",
+    "CRINGE" : "qualcosa di fortemente imbarazzante imbarazzante",
+    "CREEPY" : "spaventoso, inquietante",
+    "MEME" : "cosa divertente",
+    
+    }
+parola = input("Scrivi una parola che non capisci (usa solo lettere maiuscole!): ")
+
+spiegazione = slang_dict.get(parola)
+
+
+if parola in slang_dict.keys():
+    print(slang_dict[parola])
+else:
+    print("cia")
